@@ -1,0 +1,19 @@
+.titulosCards{
+    color: white;
+    padding-top: 60px;
+}
+.titulosCards2{
+    padding-top: 300px;
+    padding-bottom: 200px;
+}
+.botonProyecto{
+    background-color: #9A3267;
+    border: none;
+}
+.cuerpoModal{
+    font-size: 20px;
+}
+.textoCards{
+    padding-top: 40px;
+    font-size: 40px;
+}

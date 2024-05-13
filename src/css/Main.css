@@ -1,0 +1,39 @@
+.logoUTN{
+    height: 300px;
+}
+.logoUTN:hover{
+    transform: scale(1.10); 
+    transition: transform 1.0s ease; 
+}
+.aboutme{
+    padding-top: 150px;
+}
+.skills{
+    padding-top: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.group1{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    margin-left: 80px;
+}
+.group2{
+    margin-left: 80px;
+
+}
+.card:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
+  }
+  .card{
+  width: 18rem;
+  border: none;
+  
+  }
+
+

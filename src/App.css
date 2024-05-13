@@ -1,0 +1,22 @@
+.light-mode {
+    /* Estilos para el modo claro */
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .dark-mode {
+    /* Estilos para el modo oscuro */
+    background-color: #000000;
+    color: #ffffff;
+  }
+  body{
+    background-color: #03122E;
+}
+
+::-webkit-scrollbar {
+    width: 15px; /* Anchura de la barra de desplazamiento */
+    background-color: #072B49; /* Color de fondo de la barra de desplazamiento */
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #9A3267; /* Color del "pulgón" */
+    border-radius: 5px; /* Borde redondeado para el "pulgón" */
+  }

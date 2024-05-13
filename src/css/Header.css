@@ -1,0 +1,52 @@
+.header{
+    background-image: url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    /* background-image: url("https://c0.wallpaperflare.com/preview/524/860/912/screen-code-coding-programming.jpg"); */
+    /* background-image: url("https://media.licdn.com/dms/image/D4D16AQGOMWkwsMDhNA/profile-displaybackgroundimage-shrink_350_1400/0/1703290426945?e=1715212800&v=beta&t=wBmebFetFFPUMAkk1RAdqQXbPkk3BpkHf9xLFEd4AyA"); */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el elemento */
+    background-position: center; /* Centra la imagen */
+    color: rgb(238, 238, 238);
+    padding-bottom: 40px;
+    height: 600px;
+    padding-top: 55px;
+}
+.navbar{
+    font-size: 20px;
+    display: flex;
+    background-color: #020f27;
+    /* background-color: #d9eaf8; */
+}
+.foto{
+    /* backdrop-filter: blur(2px);
+    width: 500px;
+    height: 500px; */
+    /* padding-top: 20px; */
+}
+
+.iconos{
+    font-size: 27px;
+}
+.imagen{
+    margin-top: 70px;
+    width: 250px;
+    height: 250px;
+}
+.imagen:hover{
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
+}
+.texto{
+    font-size: 20px;
+}
+.imagenLogo{
+    margin-right: 10px;
+}
+.brand{
+    font-size: 25px;
+}
+.link{
+    text-decoration: none; 
+    color: inherit;
+}
+.btnOscuro{
+    color: black;
+}
