@@ -35,12 +35,14 @@ const Main = () => {
           </Col>
         </Row>
       </Container>
-      <Container id="section2" className="skills">
+
+      <Container id="section2" className="skills d-flex container-fluid">
         <div style={modoOscuro?estiloOscuro:estiloClaro}>
         <h2 className="mb-5" >
           Skills
         </h2>
         </div>
+        <Container className="d-flex">
         <Row>
         <CardGroup className="group1">
           <Col md={4}>
@@ -118,6 +120,7 @@ const Main = () => {
           </Col>
           </CardGroup>
         </Row>
+      </Container>
       </Container>
     </>
   );
