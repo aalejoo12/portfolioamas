@@ -37,8 +37,8 @@ const MainProyectos = () => {
               <Card.Title>Proyecto 1</Card.Title>
               <Card.Text>
                 <iframe
-                  width="580"
-                  height="500"
+                  width="480"
+                  height="480"
                   src="https://www.youtube.com/embed/bbZAnSNT04w"
                   title="Video Hospital C#"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -81,8 +81,8 @@ const MainProyectos = () => {
               <Card.Title>Proyecto 2</Card.Title>
               <Card.Text>
                 <iframe
-                  width="580"
-                  height="500"
+                  width="480"
+                  height="480"
                   src="https://www.youtube.com/embed/scNcEqjliuc"
                   title="Video Hospital Web"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -131,8 +131,8 @@ const MainProyectos = () => {
               <Card.Title>Proyecto 3</Card.Title>
               <Card.Text>
                 <iframe
-                  width="580"
-                  height="500"
+                  width="480"
+                  height="480"
                   src="https://www.youtube.com/embed/-iuLKvTJUzA"
                   title="Pokémon Api"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
