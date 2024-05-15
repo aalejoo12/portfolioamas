@@ -1,4 +1,3 @@
-import React from 'react'
 import { Navbar, Container,Nav, Row, Col, Form, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import "../css/HeaderProyectos.css"

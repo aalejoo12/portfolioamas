@@ -6,7 +6,7 @@ import {
   Card,
   CardGroup,
   Button,
-  Modal,
+  Modal
 } from "react-bootstrap";
 import "../css/MainProyectos.css";
 import useStore from "../store/useStore";
