@@ -22,7 +22,7 @@ const Main = () => {
             </div>
           </Col>
           <Col md={{ span: 2, offset: 2 }}>
-            <a href="https://frt.cvg.utn.edu.ar/">
+            <a href="https://frt.cvg.utn.edu.ar/" target="blank">
               <img
                 src="https://pbs.twimg.com/profile_images/998209251339259904/8S8TSIFi_400x400.jpg"
                 className="logoUTN"

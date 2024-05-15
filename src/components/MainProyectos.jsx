@@ -42,7 +42,7 @@ const MainProyectos = () => {
                   src="https://www.youtube.com/embed/bbZAnSNT04w"
                   title="Video Hospital C#"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen="false"
+                  allowFullScreen={true}
                 ></iframe>
               </Card.Text>
               <Button
@@ -53,7 +53,7 @@ const MainProyectos = () => {
               </Button>
               <Modal size="lg" show={showPro1} onHide={handleClosePro1}>
                 <Modal.Header closeButton>
-                  <Modal.Title>Proyecto 1</Modal.Title>
+                  <Modal.Title className="tituloModal">Proyecto 1</Modal.Title>
                 </Modal.Header>
                 <Modal.Body className="cuerpoModal">
                   Este proyecto es un trabajo final de 1er año de la Tecnicatura
@@ -97,7 +97,7 @@ const MainProyectos = () => {
               </Button>
               <Modal size="lg" show={showPro2} onHide={handleClosePro2}>
                 <Modal.Header closeButton>
-                  <Modal.Title>Proyecto 2</Modal.Title>
+                  <Modal.Title className="tituloModal">Proyecto 2</Modal.Title>
                 </Modal.Header>
                 <Modal.Body className="cuerpoModal">
                   Este proyecto es un trabajo final de 1er año de la Tecnicatura
@@ -147,7 +147,7 @@ const MainProyectos = () => {
               </Button>
               <Modal size="lg" show={showPro3} onHide={handleClosePro3}>
                 <Modal.Header closeButton>
-                  <Modal.Title>Proyecto 3</Modal.Title>
+                  <Modal.Title className="tituloModal">Proyecto 3</Modal.Title>
                 </Modal.Header>
                 <Modal.Body className="cuerpoModal">
                   Este proyecto es un trabajo propio realizado a partir de una
@@ -162,7 +162,7 @@ const MainProyectos = () => {
                   mediante CSS.
                   <br />
                   Link de la página en cuestión: <br/>
-                  <a href="https://pokeapialejo.netlify.app/">https://pokeapialejo.netlify.app/</a>
+                  <a href="https://pokeapialejo.netlify.app/" target="blank">https://pokeapialejo.netlify.app/</a>
                 </Modal.Body>
                 <Modal.Footer>
                   <Button variant="danger" onClick={handleClosePro3}>

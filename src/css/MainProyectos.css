@@ -12,8 +12,12 @@
 }
 .cuerpoModal{
     font-size: 20px;
+    color: black;
 }
 .textoCards{
     padding-top: 40px;
     font-size: 40px;
+}
+.tituloModal{
+    color: black;
 }
