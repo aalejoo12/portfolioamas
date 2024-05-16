@@ -34,12 +34,42 @@ const HeaderProyectos = () => {
           </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
+      {modoOscuro ? (
+              <Nav className="me-auto">
+                <button>
+                <Link onClick={scrollToTop} className="link btn2" to={"/"}><span className="spn2"> 
+                    Home
+                  </span></Link>
+                </button>
+                <button>
+                  <a href="#section1" className="btn2"><span className="spn2">Trabajos Prácticos</span></a>
+                </button>
+                <button>
+                  <a href="#section2" className="btn2"><span className="spn2">Propios</span></a>
+                </button>
+              </Nav>
+            ) :
+              (
+                <Nav className="me-auto">
+                <button>
+                <Link onClick={scrollToTop} className="link btn3" to={"/"}><span className="spn2 text-black"> 
+                    Home
+                  </span></Link>
+                </button>
+                <button>
+                  <a href="#section1" className="btn3"><span className="spn2">Trabajos Prácticos</span></a>
+                </button>
+                <button>
+                  <a href="#section2" className="btn3"><span className="spn2">Propios</span></a>
+                </button>
+              </Nav>
+              )}
+
+        {/* <Nav className="me-auto">
           <Nav.Link className={modoOscuro?"text-white":"text-black"} onClick={scrollToTop}><Link className='link' to={"/"}>Home</Link></Nav.Link>
           <Nav.Link className={modoOscuro?"text-white":"text-black"} href="#section1">Trabajos Prácticos</Nav.Link>
           <Nav.Link className={modoOscuro?"text-white":"text-black"} href="#section2">Propios</Nav.Link>
-          {/* <Nav.Link><Link className='link' to={"/proyectos"}>Proyectos</Link></Nav.Link> */}
-        </Nav>
+        </Nav> */}
         {modoOscuro ? (
               <motion.div
               whileHover={{ scale: 1.2 }}
