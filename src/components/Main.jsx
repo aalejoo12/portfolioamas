@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Card, CardGroup } from "react-bootstrap";
 import "../css/Main.css";
 import useStore from "../store/useStore";
-import { Typewriter } from 'react-simple-typewriter';
+import { Typewriter } from "react-simple-typewriter";
 
 const Main = () => {
   const { modoOscuro, estiloClaro, estiloOscuro } = useStore();
@@ -14,15 +14,19 @@ const Main = () => {
           <Col md={6}>
             <div style={modoOscuro ? estiloOscuro : estiloClaro}>
               <h2 className="mb-4">Sobre mí</h2>
-              <Typewriter
-                words={['Soy estudiante de la Tecnicatura Universitaria en Programación dictado en la UTN FRT en la cual me encuentro cursando el 2do año. Mi objetivo es poder graduarme y al mismo tiempo conseguir experiencia en el ambiente laboral IT']}
-                loop={false} // Puedes configurar si quieres que se repita la animación
-                cursor
-                cursorStyle='_'
-                typeSpeed={10} // Velocidad de escritura en milisegundos
-                deleteSpeed={2} // Velocidad de borrado en milisegundos
-                delaySpeed={9000} // Tiempo de espera entre escritura y borrado en milisegundos
-              />
+              <h3>
+                <Typewriter
+                  words={[
+                    "Soy estudiante de la Tecnicatura Universitaria en Programación dictado en la UTN FRT en la cual me encuentro cursando el 2do año. Mi objetivo es poder graduarme y al mismo tiempo conseguir experiencia en el ambiente laboral IT",
+                  ]}
+                  loop={false} // Puedes configurar si quieres que se repita la animación
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={8} // Velocidad de escritura en milisegundos
+                  deleteSpeed={2} // Velocidad de borrado en milisegundos
+                  delaySpeed={10000} // Tiempo de espera entre escritura y borrado en milisegundos
+                />
+              </h3>
               {/* <h3>
                 Soy estudiante de la Tecnicatura Universitaria en Programación
                 dictado en la UTN FRT en la cual me encuentro cursando el 2do
@@ -42,11 +46,13 @@ const Main = () => {
         </Row>
       </Container>
 
-
       <Container className="d-flex text-center">
-
         <Row className="d-flex container-fluid">
-          <div id="section2" className="text-center skills" style={modoOscuro ? estiloOscuro : estiloClaro}>
+          <div
+            id="section2"
+            className="text-center skills"
+            style={modoOscuro ? estiloOscuro : estiloClaro}
+          >
             <h2 className="mb-5">Skills</h2>
           </div>
           {/* <CardGroup className="group1"> */}
@@ -64,7 +70,7 @@ const Main = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col className="d-flex justify-content-center" >
+          <Col className="d-flex justify-content-center">
             <Card
               text={modoOscuro ? "white" : "black"}
               style={modoOscuro ? estiloOscuro : estiloClaro}
