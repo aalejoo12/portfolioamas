@@ -24,7 +24,7 @@ const Main = () => {
                   cursorStyle="_"
                   typeSpeed={8} // Velocidad de escritura en milisegundos
                   deleteSpeed={2} // Velocidad de borrado en milisegundos
-                  delaySpeed={10000} // Tiempo de espera entre escritura y borrado en milisegundos
+                  delaySpeed={8000} // Tiempo de espera entre escritura y borrado en milisegundos
                 />
               </h3>
               {/* <h3>

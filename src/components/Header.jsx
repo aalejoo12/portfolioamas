@@ -195,7 +195,7 @@ const Header = () => {
 
         <Container className="mt-4">
           {/* <marquee><h1>Hola👋 yo soy</h1></marquee> */}
-          <h1>Hola👋 yo soy</h1>
+          <h1></h1>
           <h2>Alejo Miguel, Albornoz Silva</h2>
         </Container>
       </Container>
