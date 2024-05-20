@@ -3,6 +3,7 @@ import { Container, Row, Col, Card, CardGroup } from "react-bootstrap";
 import "../css/Main.css";
 import useStore from "../store/useStore";
 import { Typewriter } from "react-simple-typewriter";
+import { motion} from "framer-motion";
 
 const Main = () => {
   const { modoOscuro, estiloClaro, estiloOscuro } = useStore();
@@ -15,6 +16,7 @@ const Main = () => {
             <div style={modoOscuro ? estiloOscuro : estiloClaro}>
               <h2 className="mb-4">Sobre mí</h2>
               <h3>
+
                 <Typewriter
                   words={[
                     "Soy estudiante de la Tecnicatura Universitaria en Programación dictado en la UTN FRT en la cual me encuentro cursando el 2do año. Mi objetivo es poder graduarme y al mismo tiempo conseguir experiencia en el ambiente laboral IT",
@@ -26,6 +28,7 @@ const Main = () => {
                   deleteSpeed={2} // Velocidad de borrado en milisegundos
                   delaySpeed={8000} // Tiempo de espera entre escritura y borrado en milisegundos
                 />
+                
               </h3>
               {/* <h3>
                 Soy estudiante de la Tecnicatura Universitaria en Programación
@@ -56,7 +59,11 @@ const Main = () => {
             <h2 className="mb-5">Skills</h2>
           </div>
           {/* <CardGroup className="group1"> */}
+         
           <Col className="d-flex justify-content-center">
+          <motion.div initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{duration:0.5}}>
             <Card
               text={modoOscuro ? "white" : "black"}
               style={modoOscuro ? estiloOscuro : estiloClaro}
@@ -69,8 +76,13 @@ const Main = () => {
                 <Card.Title>HTML</Card.Title>
               </Card.Body>
             </Card>
+          </motion.div>
+
           </Col>
           <Col className="d-flex justify-content-center">
+          <motion.div initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{duration:0.5}}>
             <Card
               text={modoOscuro ? "white" : "black"}
               style={modoOscuro ? estiloOscuro : estiloClaro}
@@ -83,6 +95,7 @@ const Main = () => {
                 <Card.Title>CSS</Card.Title>
               </Card.Body>
             </Card>
+            </motion.div>
           </Col>
           <Col className="d-flex justify-content-center">
             <Card
