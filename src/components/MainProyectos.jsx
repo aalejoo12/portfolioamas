@@ -12,6 +12,7 @@ import "../css/MainProyectos.css";
 import useStore from "../store/useStore";
 
 const MainProyectos = () => {
+  
   const [showPro1, setShowPro1] = useState(false);
   const [showPro2, setShowPro2] = useState(false);
   const [showPro3, setShowPro3] = useState(false);

@@ -38,7 +38,7 @@ const Header = () => {
             href="#home"
             onClick={scrollToTop}
           >
-            💼 Portfolio
+           💼 Portfolio
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
