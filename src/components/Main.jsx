@@ -12,28 +12,29 @@ const Main = () => {
 
   const { modoOscuro, estiloClaro, estiloOscuro } = useStore();
 
- 
 
 
 
-  
+
+
   return (
     <>
       <Container id="section1" className="aboutme">
         <Row>
           <Col md={6}>
             <div style={modoOscuro ? estiloOscuro : estiloClaro}>
-            <motion.div
-                  whileInView={{x:[0,150,0]}}
-                  transition={{
-                    ease: "linear",
-                    duration: 2,
-                    x: { duration: 1 }
-                  }}
-                >
-              <h2 className="mb-4">Sobre mí</h2>
-              <h3>
-               
+              <motion.div
+                whileInView={{ x: [0, 150, 0] }}
+                transition={{
+                  ease: "linear",
+                  duration: 2,
+                  x: { duration: 1 }
+                }}
+                viewport={{ once: true }}
+              >
+                <h2 className="mb-4">Sobre mí</h2>
+                <h3>
+
                   <Typewriter
                     words={[
                       "Soy estudiante de la Tecnicatura Universitaria en Programación dictado en la UTN FRT en la cual me encuentro cursando el 2do año. Mi objetivo es poder graduarme y al mismo tiempo conseguir experiencia en el ambiente laboral IT",
@@ -45,25 +46,38 @@ const Main = () => {
                     deleteSpeed={2} // Velocidad de borrado en milisegundos
                     delaySpeed={8000} // Tiempo de espera entre escritura y borrado en milisegundos
                   />
-              </h3>
-              {/* <h3>
+                </h3>
+                {/* <h3>
                 Soy estudiante de la Tecnicatura Universitaria en Programación
                 dictado en la UTN FRT en la cual me encuentro cursando el 2do
                 año. Mi objetivo es poder graduarme y al mismo tiempo conseguir
                 experiencia en el ambiente laboral IT
               </h3> */}
-                </motion.div>
+              </motion.div>
 
             </div>
           </Col>
+
           <Col md={{ span: 2, offset: 2 }}>
-            <a href="https://frt.cvg.utn.edu.ar/" target="blank">
-          
-              <img
-                src="https://pbs.twimg.com/profile_images/998209251339259904/8S8TSIFi_400x400.jpg"
-                className="logoUTN"
+            <motion.button
+              initial={{ opacity: 0 }}
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.5 },
+              }}
+              whileTap={{ scale: 0.9 }}
+              whileInView={{ opacity: 1,
+              transition:{duration:2} }}
+            >
+              <a href="https://frt.cvg.utn.edu.ar/" target="blank">
+
+                <img
+                  src="https://pbs.twimg.com/profile_images/998209251339259904/8S8TSIFi_400x400.jpg"
+                  className="logoUTN"
                 />
-            </a>
+              </a>
+            </motion.button>
+
           </Col>
         </Row>
       </Container>
