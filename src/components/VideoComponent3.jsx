@@ -5,13 +5,14 @@ const VideoComponent3 = () => {
   return (
     <div className='d-flex justify-content-center videos'>
     <ReactPlayer
-     url="public/PokémonApi.mp4"
+     url="https://youtu.be/-iuLKvTJUzA"
      controls={false}
      muted={true}
      playing={true}
      loop={true}
-     width="900px"
-     height="600px"
+     width="800px"
+     height="500px"
+     
    />
  </div>
   )

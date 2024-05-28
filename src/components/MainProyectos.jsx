@@ -32,7 +32,7 @@ const MainProyectos = () => {
         <div style={modoOscuro ? estiloOscuro : estiloClaro}>
           <h2 className="mb-5">Trabajos Prácticos</h2>
         </div>
-          <Container className="mb-5">
+          <Container className="mb-5 video">
             <h3 style={modoOscuro ? estiloOscuro : estiloClaro}>Proyecto 1</h3>
             <VideoComponent />
             <Button
@@ -62,7 +62,7 @@ const MainProyectos = () => {
               </Modal.Footer>
             </Modal>
           </Container>
-          <Container className="mt-5">
+          <Container className="mt-5 mb-5 video">
           <h3 style={modoOscuro ? estiloOscuro : estiloClaro}>Proyecto 2</h3>
             <VideoComponent2 />
             <Button
@@ -94,11 +94,11 @@ const MainProyectos = () => {
       </Container>
       <Container className="titulosCards2 text-center">
         <div id="section2" style={modoOscuro ? estiloOscuro : estiloClaro}>
-          <h2 className="text-center mb-4">Propios</h2>
+          <h2 className="text-center">Propios</h2>
         </div>
-          <Container>
+          <Container className="mt-5 mb-5 video">
             <h3>Proyecto 3</h3>
-          <VideoComponent3 />
+          <VideoComponent3/>
               <Button
                 className="botonProyecto"
                 onClick={() => setShowPro3(true)}
@@ -131,7 +131,7 @@ const MainProyectos = () => {
                 </Modal.Footer>
               </Modal>
               </Container>
-          <Container className="mt-5">
+          <Container className="mt-5 video">
             <Card.Body>
               <h3>Proyecto 4</h3>
               <Card.Text className="textoCards">COMING SOON...</Card.Text>

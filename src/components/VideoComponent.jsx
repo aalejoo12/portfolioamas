@@ -7,13 +7,14 @@ const VideoComponent = () => {
   return (
     <div className='d-flex justify-content-center videos'>
        <ReactPlayer
-        url="public/VideoHospitalC.mp4"
-        controls={false}
-        muted={true}
-        playing={true}
-        loop={true}
-        width="900px"
-        height="600px"
+       url="https://youtu.be/bbZAnSNT04w"
+       controls={false}
+       muted={true}
+       playing={true}
+       loop={true}
+       width="800px"
+       height="500px"
+       
       />
     </div>
     

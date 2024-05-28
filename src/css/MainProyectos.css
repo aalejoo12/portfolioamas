@@ -21,3 +21,10 @@
 .tituloModal{
     color: black;
 }
+.video:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.video{
+    padding-top: 90px;
+}
