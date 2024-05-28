@@ -33,7 +33,7 @@ const MainProyectos = () => {
           <h2 className="mb-5">Trabajos Prácticos</h2>
         </div>
           <Container className="mb-5">
-            <h3>Proyecto 1</h3>
+            <h3 style={modoOscuro ? estiloOscuro : estiloClaro}>Proyecto 1</h3>
             <VideoComponent />
             <Button
               className="botonProyecto"
@@ -63,7 +63,7 @@ const MainProyectos = () => {
             </Modal>
           </Container>
           <Container className="mt-5">
-          <h3>Proyecto 2</h3>
+          <h3 style={modoOscuro ? estiloOscuro : estiloClaro}>Proyecto 2</h3>
             <VideoComponent2 />
             <Button
               className="botonProyecto"
