@@ -7,7 +7,6 @@ import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 
 
-
 const Main = () => {
 
   const { modoOscuro, estiloClaro, estiloOscuro } = useStore();

@@ -4,7 +4,7 @@ import HeaderProyectos from '../components/HeaderProyectos'
 
 const Proyectos = () => {
   return (
-    <div>
+    <div className='container-fluid'>
         <HeaderProyectos/>
         <MainProyectos/>
         <Footer/>
