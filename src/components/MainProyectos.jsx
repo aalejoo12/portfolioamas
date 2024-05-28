@@ -10,9 +10,12 @@ import {
 } from "react-bootstrap";
 import "../css/MainProyectos.css";
 import useStore from "../store/useStore";
+import VideoComponent from "./VideoComponent";
+import VideoComponent2 from "./VideoComponent2";
+import VideoComponent3 from "./VideoComponent3";
 
 const MainProyectos = () => {
-  
+
   const [showPro1, setShowPro1] = useState(false);
   const [showPro2, setShowPro2] = useState(false);
   const [showPro3, setShowPro3] = useState(false);
@@ -27,119 +30,75 @@ const MainProyectos = () => {
     <>
       <Container id="section1" className="titulosCards text-center">
         <div style={modoOscuro ? estiloOscuro : estiloClaro}>
-          <h2 className="mb-4">Trabajos Prácticos</h2>
+          <h2 className="mb-5">Trabajos Prácticos</h2>
         </div>
-        <CardGroup>
-          <Card
-            text={modoOscuro ? "white" : "black"}
-            style={modoOscuro ? estiloOscuro : estiloClaro}
-          >
-            <Card.Body>
-              <Card.Title>Proyecto 1</Card.Title>
-              <Card.Text>
-                <iframe
-                  width="480"
-                  height="480"
-                  src="https://www.youtube.com/embed/bbZAnSNT04w"
-                  title="Video Hospital C#"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen={true}
-                ></iframe>
-              </Card.Text>
-              <Button
-                className="botonProyecto"
-                onClick={() => setShowPro1(true)}
-              >
-                Saber más
-              </Button>
-              <Modal size="lg" show={showPro1} onHide={handleClosePro1}>
-                <Modal.Header closeButton>
-                  <Modal.Title className="tituloModal">Proyecto 1</Modal.Title>
-                </Modal.Header>
-                <Modal.Body className="cuerpoModal">
-                  Este proyecto es un trabajo final de 1er año de la Tecnicatura
-                  Universitaria en Programación de la UTN FRT. El cual consiste
-                  en realizar una aplicación de escritorio de un hospital que
-                  tenga su CRUD correspondiente unicamente para la asignación de
-                  turnos. Este mismo fue creado mediante la utilización de C# y
-                  SQL Server Management, conectando este ultimo con nuestra
-                  aplicación y realizando las consultas correspondientes para el
-                  correcto manejo de los datos.
-                </Modal.Body>
-                <Modal.Footer>
-                  <Button variant="danger" onClick={handleClosePro1}>
-                    Cerrar
-                  </Button>
-                </Modal.Footer>
-              </Modal>
-            </Card.Body>
-          </Card>
-          <Card
-            text={modoOscuro ? "white" : "black"}
-            style={modoOscuro ? estiloOscuro : estiloClaro}
-          >
-            <Card.Body>
-              <Card.Title>Proyecto 2</Card.Title>
-              <Card.Text>
-                <iframe
-                  width="480"
-                  height="480"
-                  src="https://www.youtube.com/embed/scNcEqjliuc"
-                  title="Video Hospital Web"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen="false"
-                ></iframe>
-              </Card.Text>
-              <Button
-                className="botonProyecto"
-                onClick={() => setShowPro2(true)}
-              >
-                Saber más
-              </Button>
-              <Modal size="lg" show={showPro2} onHide={handleClosePro2}>
-                <Modal.Header closeButton>
-                  <Modal.Title className="tituloModal">Proyecto 2</Modal.Title>
-                </Modal.Header>
-                <Modal.Body className="cuerpoModal">
-                  Este proyecto es un trabajo final de 1er año de la Tecnicatura
+          <Container className="mb-5">
+            <h3 style={modoOscuro ? estiloOscuro : estiloClaro}>Proyecto 1</h3>
+            <VideoComponent />
+            <Button
+              className="botonProyecto"
+              onClick={() => setShowPro1(true)}
+            >
+              Saber más
+            </Button>
+            <Modal size="lg" show={showPro1} onHide={handleClosePro1}>
+              <Modal.Header closeButton>
+                <Modal.Title className="tituloModal">Proyecto 1</Modal.Title>
+              </Modal.Header>
+              <Modal.Body className="cuerpoModal">
+                Este proyecto es un trabajo final de 1er año de la Tecnicatura
+                Universitaria en Programación de la UTN FRT. El cual consiste
+                en realizar una aplicación de escritorio de un hospital que
+                tenga su CRUD correspondiente unicamente para la asignación de
+                turnos. Este mismo fue creado mediante la utilización de C# y
+                SQL Server Management, conectando este ultimo con nuestra
+                aplicación y realizando las consultas correspondientes para el
+                correcto manejo de los datos.
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="danger" onClick={handleClosePro1}>
+                  Cerrar
+                </Button>
+              </Modal.Footer>
+            </Modal>
+          </Container>
+          <Container className="mt-5">
+          <h3 style={modoOscuro ? estiloOscuro : estiloClaro}>Proyecto 2</h3>
+            <VideoComponent2 />
+            <Button
+              className="botonProyecto"
+              onClick={() => setShowPro2(true)}
+            >
+              Saber más
+            </Button>
+            <Modal size="lg" show={showPro2} onHide={handleClosePro2}>
+              <Modal.Header closeButton>
+                <Modal.Title className="tituloModal">Proyecto 2</Modal.Title>
+              </Modal.Header>
+              <Modal.Body className="cuerpoModal">
+              Este proyecto es un trabajo final de 1er año de la Tecnicatura
                   Universitaria en Programación de la UTN FRT. El cual consiste
                   en realizar una aplicación web de un hospital que tenga su
                   CRUD correspondiente unicamente para la asignación de turnos.
                   Este mismo fue creado mediante la utilización de HTML, CSS, JS
                   y realizando peticiones HTTP a una base de datos ficticia de
                   un archivo json creado por nosotros mismos.
-                </Modal.Body>
-                <Modal.Footer>
-                  <Button variant="danger" onClick={handleClosePro2}>
-                    Cerrar
-                  </Button>
-                </Modal.Footer>
-              </Modal>
-            </Card.Body>
-          </Card>
-        </CardGroup>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="danger" onClick={handleClosePro2}>
+                  Cerrar
+                </Button>
+              </Modal.Footer>
+            </Modal>
+          </Container>
       </Container>
-      <Container id="section2" className="titulosCards2 text-center">
-        <div style={modoOscuro ? estiloOscuro : estiloClaro}>
+      <Container className="titulosCards2 text-center">
+        <div id="section2" style={modoOscuro ? estiloOscuro : estiloClaro}>
           <h2 className="text-center mb-4">Propios</h2>
         </div>
-        <CardGroup>
-          <Card
-            text={modoOscuro ? "white" : "black"}
-            style={modoOscuro ? estiloOscuro : estiloClaro}
-          >
-            <Card.Body>
-              <Card.Title>Proyecto 3</Card.Title>
-              <Card.Text>
-                <iframe
-                  width="480"
-                  height="480"
-                  src="https://www.youtube.com/embed/-iuLKvTJUzA"
-                  title="Pokémon Api"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen="false"
-                ></iframe>
-              </Card.Text>
+          <Container>
+            <h3>Proyecto 3</h3>
+          <VideoComponent3 />
               <Button
                 className="botonProyecto"
                 onClick={() => setShowPro3(true)}
@@ -162,7 +121,7 @@ const MainProyectos = () => {
                   Styled-Components y React-Router-Dom, más el manejo de estilos
                   mediante CSS.
                   <br />
-                  Link de la página en cuestión: <br/>
+                  Link de la página en cuestión: <br />
                   <a href="https://pokeapialejo.netlify.app/" target="blank">https://pokeapialejo.netlify.app/</a>
                 </Modal.Body>
                 <Modal.Footer>
@@ -171,18 +130,13 @@ const MainProyectos = () => {
                   </Button>
                 </Modal.Footer>
               </Modal>
-            </Card.Body>
-          </Card>
-          <Card
-            text={modoOscuro ? "white" : "black"}
-            style={modoOscuro ? estiloOscuro : estiloClaro}
-          >
+              </Container>
+          <Container className="mt-5">
             <Card.Body>
-              <Card.Title>Proyecto 4</Card.Title>
+              <h3>Proyecto 4</h3>
               <Card.Text className="textoCards">COMING SOON...</Card.Text>
             </Card.Body>
-          </Card>
-        </CardGroup>
+          </Container>
       </Container>
     </>
   );
