@@ -5,7 +5,7 @@ import "../css/VideoComponent.css"
 ;
 const VideoComponent = () => {
   return (
-    <div className='d-flex justify-content-center'>
+    <div className='d-flex justify-content-center videos'>
        <ReactPlayer
         url="public/VideoHospitalC.mp4"
         controls={false}

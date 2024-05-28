@@ -84,11 +84,11 @@ const Main = () => {
       <Container className="d-flex text-center">
         <Row className="d-flex container-fluid">
           <div
-            id="section2"
+            
             className="text-center skills"
             style={modoOscuro ? estiloOscuro : estiloClaro}
           >
-            <h2 className="mb-5">Skills</h2>
+            <h2 id="section2" className="mb-5">Skills</h2>
           </div>
           {/* <CardGroup className="group1"> */}
 
@@ -130,6 +130,9 @@ const Main = () => {
             </motion.div>
           </Col>
           <Col className="d-flex justify-content-center">
+          <motion.div initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ duration: 0.5 }}>
             <Card
               text={modoOscuro ? "white" : "black"}
               style={modoOscuro ? estiloOscuro : estiloClaro}
@@ -142,9 +145,13 @@ const Main = () => {
                 <Card.Title>JavaScript</Card.Title>
               </Card.Body>
             </Card>
+            </motion.div>
           </Col>
           {/* <CardGroup className="group2"> */}
           <Col className="d-flex justify-content-center">
+          <motion.div initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ duration: 0.5 }}>
             <Card
               text={modoOscuro ? "white" : "black"}
               style={modoOscuro ? estiloOscuro : estiloClaro}
@@ -157,8 +164,12 @@ const Main = () => {
                 <Card.Title>React</Card.Title>
               </Card.Body>
             </Card>
+            </motion.div>
           </Col>
           <Col className="d-flex justify-content-center">
+          <motion.div initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ duration: 0.5 }}>
             <Card
               text={modoOscuro ? "white" : "black"}
               style={modoOscuro ? estiloOscuro : estiloClaro}
@@ -171,8 +182,12 @@ const Main = () => {
                 <Card.Title>Sql Server</Card.Title>
               </Card.Body>
             </Card>
+            </motion.div>
           </Col>
           <Col className="d-flex justify-content-center">
+          <motion.div initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ duration: 0.5 }}>
             <Card
               text={modoOscuro ? "white" : "black"}
               style={modoOscuro ? estiloOscuro : estiloClaro}
@@ -185,6 +200,7 @@ const Main = () => {
                 <Card.Title>C#</Card.Title>
               </Card.Body>
             </Card>
+            </motion.div>
           </Col>
         </Row>
       </Container>
