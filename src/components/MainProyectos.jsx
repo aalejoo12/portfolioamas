@@ -13,6 +13,8 @@ import useStore from "../store/useStore";
 import VideoComponent from "./VideoComponent";
 import VideoComponent2 from "./VideoComponent2";
 import VideoComponent3 from "./VideoComponent3";
+import { Typewriter } from "react-simple-typewriter";
+
 
 const MainProyectos = () => {
 
@@ -134,7 +136,20 @@ const MainProyectos = () => {
           <Container className="mt-5 video">
             <Card.Body>
               <h3>Proyecto 4</h3>
-              <Card.Text className="textoCards">COMING SOON...</Card.Text>
+             <h2 className="mt-5">
+              <Typewriter
+                    className="comming"
+                    words={[
+                      "COMING SOON...",
+                    ]}
+                    loop={false} // Puedes configurar si quieres que se repita la animación
+                    cursor
+                    cursorStyle="_"
+                    typeSpeed={40} // Velocidad de escritura en milisegundos
+                    deleteSpeed={40} // Velocidad de borrado en milisegundos
+                    delaySpeed={2000} // Tiempo de espera entre escritura y borrado en milisegundos
+                  />
+                  </h2>
             </Card.Body>
           </Container>
       </Container>
