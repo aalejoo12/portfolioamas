@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Proyectos from "./pages/Proyectos";
 import useStore from "./store/useStore";
 import { createGlobalStyle } from "styled-components";
+import UltimaVisita from "./components/UltimaVisita";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -25,6 +26,8 @@ function App() {
             <Route path="*" element={<Home />} />
           </Routes>
         </BrowserRouter>
+      <UltimaVisita/>
+
     </>
   );
 }

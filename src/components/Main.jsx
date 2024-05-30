@@ -5,6 +5,7 @@ import "../css/Main.css";
 import useStore from "../store/useStore";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
+import UltimaVisita from "./UltimaVisita";
 
 
 const Main = () => {
