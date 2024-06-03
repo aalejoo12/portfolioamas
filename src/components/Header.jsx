@@ -22,7 +22,7 @@ const Header = () => {
 
   const { cambiarColor, modoOscuro, estiloClaro, estiloOscuro } = useStore();
 
-  return (
+  return (    
     <div className="header">
       <Navbar
         expand="lg"

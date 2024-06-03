@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios';
 import { TOKEN } from '../constants/constantes';
 import { Nav, Navbar } from 'react-bootstrap';
-
+import "../css/ultimaVisita.css"
 
 const UltimaVisita = () => {
 
@@ -15,7 +15,7 @@ const UltimaVisita = () => {
 
     useEffect(()=>{
 
-        axios.get('https://ipinfo.io?token=063b50af82671a')
+        axios.get(TOKEN)
         .then(resp=>{
             const respuesta = resp.data
             setPais(respuesta.country)
@@ -29,7 +29,7 @@ const UltimaVisita = () => {
     },[pais])
 
   return (
-    <Navbar className='text-end me-5' sticky="top">{pais ? <p>Ultima visita desde: {ciudad}, {provincia}, {pais}</p> : <p>Loading location...</p>} </Navbar>
+    <Navbar className='text-end me-4 ultimaVisita' fixed="bottom">{pais ? <p className='textoVisita'>Última visita desde: {ciudad}, {provincia}, {pais}</p> : <p>Cargando ubicación</p>} </Navbar>
   )
 }
 

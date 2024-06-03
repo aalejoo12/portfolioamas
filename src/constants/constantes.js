@@ -1,5 +1,5 @@
 
-export const TOKEN = "ipinfo.io/181.116.215.76?token=063b50af82671a"
+export const TOKEN = "https://ipinfo.io?token=063b50af82671a"
 
 
 
