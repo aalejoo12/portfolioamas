@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import "../css/Header.css";
 import useStore from "../store/useStore";
 import { motion } from "framer-motion";
-import asdasd from "../assets/asdasd.jpg" 
+import asdasd from "../../public/asdasd.jpg" 
 
 const Header = () => {
   const scrollToTop = () => {

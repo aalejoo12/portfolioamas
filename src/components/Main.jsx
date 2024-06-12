@@ -6,8 +6,7 @@ import useStore from "../store/useStore";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import UltimaVisita from "./UltimaVisita";
-import logoUTN from "../assets/logoUTN.png"
-
+import logoUTN from "../../public/logoUTN.png"
 const Main = () => {
 
   const { modoOscuro, estiloClaro, estiloOscuro } = useStore();
