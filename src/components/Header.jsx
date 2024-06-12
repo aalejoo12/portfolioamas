@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import "../css/Header.css";
 import useStore from "../store/useStore";
 import { motion } from "framer-motion";
+import asdasd from "../assets/asdasd.jpg" 
 
 const Header = () => {
   const scrollToTop = () => {
@@ -185,13 +186,7 @@ const Header = () => {
         > */}
       <Container className="text-center foto">
 
-        <Image
-          className="imagen"
-          src={
-            "https://media.licdn.com/dms/image/D4D03AQFUdJ94JNloyQ/profile-displayphoto-shrink_200_200/0/1703194462289?e=2147483647&v=beta&t=O6JFs-rKpd90m6KYb0gr66XO5tEveY77XtJs0x_tnAo"
-          }
-          roundedCircle
-        ></Image>
+        <Image className="imagen" src={asdasd} roundedCircle/>
 
         <Container className="mt-4">
           {/* <marquee><h1>Hola👋 yo soy</h1></marquee> */}

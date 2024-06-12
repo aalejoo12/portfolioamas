@@ -1,12 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import { Container, Row, Col, Card, CardGroup } from "react-bootstrap";
+import { Container, Row, Col, Card, CardGroup, Image } from "react-bootstrap";
 import "../css/Main.css";
 import useStore from "../store/useStore";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import UltimaVisita from "./UltimaVisita";
-
+import logoUTN from "../assets/logoUTN.png"
 
 const Main = () => {
 
@@ -71,10 +71,8 @@ const Main = () => {
             >
               <a href="https://frt.cvg.utn.edu.ar/" target="blank">
 
-                <img
-                  src="https://pbs.twimg.com/profile_images/998209251339259904/8S8TSIFi_400x400.jpg"
-                  className="logoUTN"
-                />
+              <Image className="logoUTN" src={logoUTN}/>
+
               </a>
             </motion.button>
 
@@ -203,7 +201,9 @@ const Main = () => {
             </Card>
             </motion.div>
           </Col>
+        
         </Row>
+       
       </Container>
     </>
   );
