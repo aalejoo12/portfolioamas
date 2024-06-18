@@ -12,7 +12,7 @@
 }
 
 .skills {
-    padding-top: 280px;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -37,7 +37,7 @@
     transition: transform 0.3s ease;
 }
     .card {
-        width: 17rem;
+        width: 12rem;
         border: none;
     }
 /* 
@@ -48,3 +48,6 @@
     }
     
   } */
+.tituloSkills{
+    padding-top: 200px;
+}

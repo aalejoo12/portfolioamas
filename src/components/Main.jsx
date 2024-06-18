@@ -7,6 +7,8 @@ import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import UltimaVisita from "./UltimaVisita";
 import logoUTN from "../../public/logoUTN.png"
+import mysql from "../../public/mysql.png" 
+
 const Main = () => {
 
   const { modoOscuro, estiloClaro, estiloOscuro } = useStore();
@@ -79,18 +81,18 @@ const Main = () => {
         </Row>
       </Container>
 
+      <h2 id="section2" className="text-center tituloSkills">Skills</h2>
+
       <Container className="d-flex text-center">
         <Row className="d-flex container-fluid">
           <div
-            
             className="text-center skills"
             style={modoOscuro ? estiloOscuro : estiloClaro}
           >
-            <h2 id="section2" className="mb-5">Skills</h2>
           </div>
           {/* <CardGroup className="group1"> */}
 
-          <Col className="d-flex justify-content-center">
+          <Col md={3} className="d-flex justify-content-center">
             <motion.div initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.5 }}>
@@ -109,7 +111,7 @@ const Main = () => {
             </motion.div>
 
           </Col>
-          <Col className="d-flex justify-content-center">
+          <Col md={3} className="d-flex justify-content-center">
             <motion.div initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.5 }}>
@@ -127,7 +129,7 @@ const Main = () => {
               </Card>
             </motion.div>
           </Col>
-          <Col className="d-flex justify-content-center">
+          <Col md={3} className="d-flex justify-content-center">
           <motion.div initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.5 }}>
@@ -146,7 +148,7 @@ const Main = () => {
             </motion.div>
           </Col>
           {/* <CardGroup className="group2"> */}
-          <Col className="d-flex justify-content-center">
+          <Col md={3} className="d-flex justify-content-center">
           <motion.div initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.5 }}>
@@ -164,7 +166,7 @@ const Main = () => {
             </Card>
             </motion.div>
           </Col>
-          <Col className="d-flex justify-content-center">
+          <Col md={4} className="d-flex justify-content-center">
           <motion.div initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.5 }}>
@@ -182,7 +184,7 @@ const Main = () => {
             </Card>
             </motion.div>
           </Col>
-          <Col className="d-flex justify-content-center">
+          <Col md={4} className="d-flex justify-content-center">
           <motion.div initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.5 }}>
@@ -199,8 +201,27 @@ const Main = () => {
               </Card.Body>
             </Card>
             </motion.div>
+           
+            
           </Col>
-        
+          <Col md={4} className="d-flex justify-content-center">
+          <motion.div initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ duration: 0.5 }}>
+            <Card
+              text={modoOscuro ? "white" : "black"}
+              style={modoOscuro ? estiloOscuro : estiloClaro}
+            >
+              <Card.Img
+                variant="top"
+                src={mysql}
+              />
+              <Card.Body>
+                <Card.Title>Mysql</Card.Title>
+              </Card.Body>
+            </Card>
+            </motion.div>
+            </Col>
         </Row>
        
       </Container>
